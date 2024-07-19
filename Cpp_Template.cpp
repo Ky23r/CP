@@ -35,7 +35,8 @@ string to_string(bool x) {
 }
 string to_string(const vector<bool>& x) {
     string res;
-    REP(i, sz(x)) res += (i ? ", " : "") + to_string(x[i]);
+    REP(i, sz(x))
+        res += (i ? ", " : "") + to_string(x[i]);
     return ("{" + res + "}");
 }
 template <typename T, typename V> string to_string(const pair<T, V>& x) {
@@ -44,7 +45,8 @@ template <typename T, typename V> string to_string(const pair<T, V>& x) {
 template <typename T> string to_string(const T& x) {
     string res;
     int i = 0;
-    each(y, x) res += (i++ ? ", " : "") + to_string(y);
+    each(y, x)
+        res += (i++ ? ", " : "") + to_string(y);
     return ("{" + res + "}");
 }
 void dbg_out() {
@@ -52,7 +54,8 @@ void dbg_out() {
 }
 template <typename T, typename... V> void dbg_out(const T& t, const V&... v) {
     cerr << to_string(t);
-    if (sizeof...(v)) cerr << ", ";
+    if (sizeof...(v))
+        cerr << ", ";
     dbg_out(v...);
 }
 
