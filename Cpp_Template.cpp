@@ -75,8 +75,8 @@ void solve() {
 
 int main() {
 #ifdef LOCAL
-    freopen("IO_Files/Input.txt", "r", stdin);
-    // freopen("IO_Files/Output.txt", "w", stdout);
+    freopen("Input.txt", "r", stdin);
+    // freopen("Output.txt", "w", stdout);
 #endif
     ios_base::sync_with_stdio(0);
     cin.tie(0);
